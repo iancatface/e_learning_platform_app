@@ -1,0 +1,16 @@
+FIXTURES
+
+#########dumping data into standard output in json
+python manage.py dumpdata --indent=2
+
+########dumping specific model
+(python manage.py dumpdata courses.subject )
+
+#########specify format or output file
+--format
+--output=<folder/file.json>
+
+######optional fixture dir in settings
+FIXTURE_DIRS = 
+#### u don't need to specify path - django will look for files in fixtures folder
+python manage.py loaddata <file.json>
